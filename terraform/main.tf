@@ -26,8 +26,8 @@ resource "azurerm_container_app" "aca" {
 
   template {
     container {
-      name   = "helloworld-app"
-      image  = "mcr.microsoft.com/azuredocs/containerapps-helloworld:latest"
+      name   = "example-container-app"
+      image  = "youracrregistries.azurecr.io/yourimage:latest"
       cpu    = 0.25
       memory = "0.5Gi"
     }
