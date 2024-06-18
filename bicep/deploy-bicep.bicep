@@ -11,7 +11,7 @@ param containerAppLogAnalyticsName string = 'log-${uniqueString(resourceGroup().
 param location string = resourceGroup().location
 
 @description('Specifies the docker container image to deploy.')
-param containerImage string = 'tripinforegisties.azurecr.io/tasklog:latest'
+param containerImage string = 'example-registries.azurecr.io/example-images:latest'
 
 @description('Specifies the container port.')
 param targetPort int = 80
